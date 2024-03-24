@@ -1,57 +1,90 @@
-*{
+* {
     font-family: "Work Sans", sans-serif;
 }
-header{
+
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px 45px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > h3{
+
+nav>h3 {
     color: var(--Dark-01, #131313);
-font-size: 45px;
-font-weight: 700;
+    font-size: 2.8125rem;
+    font-weight: 700;
 }
-nav>ul{
+
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 30px;
 }
- nav li>a{
+
+nav li>a {
     text-decoration: none;
- 
+
     color: var(--Dark-02, #424242);
-font-size: 18px;
-font-weight: 500;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
+
 /* banner part */
-.banner-title{
+.banner-title {
     color: var(--Dark-01, #131313);
-font-size: 64px;
-font-weight: 700;
+    font-size: 4rem;
+    font-weight: 700;
 }
-.banner-content{
-    width: 862px;
+
+.banner-content {
+    max-width: 862px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-description{
+
+.banner-description {
     color: var(--Dark-03, #727272);
-line-height: 26px;
+    line-height: 26px;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
-background: #FF900E;
-border: none;
-padding: 20px 24px;
-}
-.btn-text{
+    background: #FF900E;
+    border: none;
+    padding: 20px 24px;
     color: #FFF;
-font-size: 20px;
-font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+.banner img{
+    width: 100%;
+}
+/* for responsive */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
 }
