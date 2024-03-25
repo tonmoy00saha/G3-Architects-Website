@@ -62,29 +62,87 @@ nav li>a {
     color: #FFF;
     font-size: 1.25rem;
     cursor: pointer;
-    margin-top: 32px;
+    margin-top: 2rem;
     margin-bottom: 50px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
+
 /* for responsive */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
 
 /* tablet or medium devices */
-@media screen and (min-width: 576px) and (max-width: 960px){
-    nav{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 50px;
     }
+}
+
+/* main styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-container {
+    margin-top: 85px;
+}
+
+.teams-content {
+    margin-left: 76px;
+}
+
+.quick {
+    color: #727272;
+    font-size: 2.8125rem;
+    font-weight: 500;
+}
+
+.of {
+    color: #131313;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.features-title {
+    max-width: 468px;
+}
+
+.features-des {
+    max-width: 537px;
+    color: #727272;
+    line-height: 26px;
+    margin-top: 1.5rem;
 }
