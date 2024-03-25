@@ -14,7 +14,7 @@ nav {
 }
 
 nav>h3 {
-    color: var(--Dark-01, #131313);
+    color:  #131313;
     font-size: 2.8125rem;
     font-weight: 700;
 }
@@ -119,6 +119,18 @@ main {
     color: #727272;
     line-height: 26px;
     margin-top: 1.5rem;
+}
+/* facts part */
+.fact-title{
+font-size: 2.8125rem;
+font-weight: 700;
+margin-bottom: 0;
+}
+.fact-des{
+    margin-top: 24px;
+    max-width: 542px;
+    color: #727272;
+    line-height: 26px;
 }
 /* for responsive */
 /* mobile devices */
